@@ -5,7 +5,7 @@ itemCount = 0
 possibleCommands = ["help", "add item", "delete item", "quit", "list items"]
 # printing welcome message along with all possible commands
 print("Welcome to the best Item Management System!")
-print("Please entera command, possible commands:", possibleCommands)
+print("Please enter a command, possible commands:", possibleCommands)
 
 # starting a while loop to iterate through commands
 while True:
@@ -18,6 +18,7 @@ while True:
 
         # ACTIVITY HERE
         # print goodbye message
+        print("Goodbye")
 
         print("")
         exit()
@@ -43,7 +44,7 @@ while True:
 
         # ACTIVITY HERE
         # insert add item command here to append to items list (itemCount, NewItemName, NewItemPrice, NewItemDescription)
-
+        items.append([itemcount, NewItemName, NewItemPrice, NewItemDescription])
 
         itemCount += 1
 
@@ -60,7 +61,7 @@ while True:
 
         # ACTIVITY HERE
         # insert delete item command here to pop items from items list. remember to convert "deleteItem" to an integer
-
+        items.pop(deleteItem)
 
         for item in items:
             if item[0] != 0:
@@ -77,5 +78,11 @@ while True:
 
         # ACTIVITY HERE
         # print error message here and all possible commands (use seperate print statements)
+        print("Error - not a valid command. Try:")
+        print(possibleCommands[0])
+        print(possibleCommands[1])
+        print(possibleCommands[2])
+        print(possibleCommands[3])
+        print(possibleCommands[4])
         
         print("")
