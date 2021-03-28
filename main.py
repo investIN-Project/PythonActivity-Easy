@@ -2,7 +2,7 @@
 items = []
 itemCount = 0
 # defing a list of possible commands
-possibleCommands = ["help", "add item", "delete item", "quit", "list items"]
+possibleCommands = ["help", "additem", "deleteitem", "quit", "listitems"]
 # printing welcome message along with all possible commands
 print("Welcome to the best Item Management System!")
 print("Please enter a command, possible commands:", possibleCommands)
@@ -19,6 +19,7 @@ while True:
         # ACTIVITY HERE
         # print goodbye message
         print("Goodbye")
+        break
 
         print("")
         exit()
