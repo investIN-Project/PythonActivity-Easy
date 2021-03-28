@@ -44,7 +44,7 @@ while True:
 
         # ACTIVITY HERE
         # insert add item command here to append to items list (itemCount, NewItemName, NewItemPrice, NewItemDescription)
-        items.append([itemcount, NewItemName, NewItemPrice, NewItemDescription])
+        items.append([itemCount, NewItemName, NewItemPrice, NewItemDescription])
 
         itemCount += 1
 
@@ -61,14 +61,14 @@ while True:
 
         # ACTIVITY HERE
         # insert delete item command here to pop items from items list. remember to convert "deleteItem" to an integer
-        items.pop(deleteItem)
+        items.pop(int(deleteItem))
 
         for item in items:
             if item[0] != 0:
                 item[0] = item[0] - 1
         itemCount -= 1
         # printing notification message
-        print("Item number: " + deleteItem + " has been deleted!")
+        print("Item number " + deleteItem + " has been deleted!")
         print("")
         
     # If no valid commands are entered
